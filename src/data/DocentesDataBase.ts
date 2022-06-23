@@ -1,8 +1,8 @@
-import UsuarioModel from "../model/UsuarioModel";
+import DocenteModel from "../model/DocenteModel";
 import { BaseDatabase } from "./BaseDatabase";
 
 class DocentesDataBase extends BaseDatabase {
-    public async insert(docente: UsuarioModel) {
+    public async insert(docente: DocenteModel) {
         try {
             await BaseDatabase.connection("DOCENTE")
                 .insert({
@@ -10,7 +10,8 @@ class DocentesDataBase extends BaseDatabase {
                     "nome": docente.getNome(),
                     "email": docente.getEmail(),
                     "data_nasc": docente.getDataNasc(),
-                    "turma_id": docente.getTurmaId()
+                    "turma_id": docente.getTurmaId(),
+                    "especialidades": docente.getEspecialidades()
                 });
         } catch (error: any) {
             throw new Error(error.sqlMessage);
