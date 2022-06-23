@@ -1,4 +1,4 @@
-import UsuarioModel from "../model/UsuarioModel";
+import UsuarioModel from "../model/types";
 import { BaseDatabase } from "./BaseDatabase";
 
 class EstudantesDataBase extends BaseDatabase {

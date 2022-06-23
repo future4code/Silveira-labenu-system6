@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import DocentesDataBase from "../data/DocentesDataBase";
-import UsuarioModel from "../model/UsuarioModel";
+import UsuarioModel from "../model/types";
 
 async function postDocente(req: Request, res: Response): Promise<void> {
     try {
