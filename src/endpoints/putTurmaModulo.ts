@@ -10,6 +10,16 @@ async function putTurmaModulo(req: Request, res: Response): Promise<void> {
             throw new Error("Valor(es) do body não encontrado(s).");
         };
 
+        if(typeof modulo != "string"){
+            res.statusCode = 400
+            throw new Error("Módulo precisa ser do tipo string.");
+        };
+
+        if(Number(modulo) <= 0 || Number(modulo) > 7){
+            res.statusCode = 400
+            throw new Error("Módulo precisa ser de 1 até 7.");
+        };
+
         const turmaDB = new TurmaDataBase();
 
         await turmaDB.putTurmaModulo( modulo, turmaId );

@@ -2,7 +2,7 @@ export class Turma {
     constructor (
         private id: string,
         private nome: string,
-        private modulo: string
+        private modulo?: string
     ) {}
 
     public getId(): string {
@@ -14,7 +14,7 @@ export class Turma {
     }
 
     public getModulo(): string {
-        return this.modulo
+        return !this.modulo ? "0" : this.modulo;
     }
 }
 

@@ -1,12 +1,13 @@
+import { Turma } from "../model/types";
 import { BaseDatabase } from "./BaseDatabase";
 
 class TurmaDataBase extends BaseDatabase {
-    public async insert(turma: {id: string, nome: string}) {
+    public async insert(turma: Turma) {
         try {
             await BaseDatabase.connection("TURMA")
                 .insert({
-                    "id": turma.id,
-                    "nome": turma.nome
+                    "id": turma.getId(),
+                    "nome": turma.getNome()
                 });
         } catch (error: any) {
             throw new Error(error.sqlMessage);
@@ -14,19 +15,21 @@ class TurmaDataBase extends BaseDatabase {
     };
     public async getTurma() {
         try {
-            await BaseDatabase.connection("TURMA")
+            const result = await BaseDatabase.connection("TURMA")
                 .select("*")
                 .where("modulo", ">", "0")
                 .andWhere("modulo", "<", "7");
+
+            return result;
         } catch (error: any) {
             throw new Error(error.sqlMessage);
         };
     };
-    public async putTurmaModulo(modulo: number, turmaId: string){
+    public async putTurmaModulo(modulo: string, turmaId: string){
         try {
             await BaseDatabase.connection("TURMA")
                 .update("modulo", modulo)
-                .where("turma_id", turmaId);
+                .where("id", turmaId);
         } catch (error: any) {
             throw new Error(error.sqlMessage);
         };

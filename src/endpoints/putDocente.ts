@@ -3,16 +3,16 @@ import DocentesDataBase from "../data/DocentesDataBase";
 
 async function putDocente(req: Request, res: Response): Promise<void> {
     try {
-        const { turmaId, estudanteId} = req.body;
+        const { turmaId, docenteId} = req.body;
 
-        if(!estudanteId || !turmaId){
+        if(!docenteId || !turmaId){
             res.statusCode = 404
             throw new Error("Valor(es) do body não encontrado(s).");
         };
 
         const docentesDB = new DocentesDataBase();
 
-        await docentesDB.putDocenteTurma( turmaId, estudanteId );
+        await docentesDB.putDocenteTurma( turmaId, docenteId );
 
         res.status(201).send({message: "sucesso"});
     } 
