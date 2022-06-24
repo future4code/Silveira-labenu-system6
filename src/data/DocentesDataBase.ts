@@ -12,7 +12,8 @@ class DocentesDataBase extends BaseDatabase {
                     "nome": docente.getNome(),
                     "email": docente.getEmail(),
                     "data_nasc": docente.getDataNasc(),
-                    "turma_id": docente.getTurmaId()
+                    "turma_id": docente.getTurmaId(),
+                    "especialidades": docente.getEspecialidades()
                 });
             
             for (let i = 0; i < especialidades.length; i++) {
