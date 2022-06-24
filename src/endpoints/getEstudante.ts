@@ -3,7 +3,7 @@ import EstudantesDataBase from "../data/EstudantesDataBase";
 
 async function getEstudante(req: Request, res: Response): Promise<void> {
     try {
-        const nome: string = req.params.name;
+        const nome: string = req.params.nome;
 
         if(!nome){
             res.statusCode = 404

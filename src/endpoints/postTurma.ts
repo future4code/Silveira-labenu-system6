@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import TurmaDataBase from "../data/TurmaDataBase";
+import { Turma } from "../model/types";
 
 async function postTurma(req: Request, res: Response): Promise<void> {
     try {
@@ -14,11 +15,12 @@ async function postTurma(req: Request, res: Response): Promise<void> {
 
         const turmaDB = new TurmaDataBase();
 
-        await turmaDB.insert({id,nome});
+        const turmaDados = new Turma( id, nome );
+
+        await turmaDB.insert(turmaDados);
 
         res.status(201).send({message: "sucesso"});
-
-    } 
+    }
     catch(error:any) {
         res.status(500).send(error.message);
     };

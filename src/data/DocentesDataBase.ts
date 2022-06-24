@@ -1,9 +1,11 @@
-import UsuarioModel from "../model/UsuarioModel";
+import { Docente } from "../model/types";
 import { BaseDatabase } from "./BaseDatabase";
 
 class DocentesDataBase extends BaseDatabase {
-    public async insert(docente: UsuarioModel) {
+    public async insert(docente: Docente) {
         try {
+            let especialidades: string[] = docente.getEspecialidades();
+
             await BaseDatabase.connection("DOCENTE")
                 .insert({
                     "id": docente.getId(),
@@ -12,15 +14,27 @@ class DocentesDataBase extends BaseDatabase {
                     "data_nasc": docente.getDataNasc(),
                     "turma_id": docente.getTurmaId()
                 });
-        } catch (error: any) {
+            
+            for (let i = 0; i < especialidades.length; i++) {
+                await BaseDatabase.connection("DOCENTE_ESPECIALIDADE")
+                    .insert({
+                        "id": Math.floor(Date.now() * Math.random()).toString(36),
+                        "docente_id": docente.getId(),
+                        "especialidade_id": especialidades[i]
+                    });
+            };
+        } 
+        catch (error: any) {
             throw new Error(error.sqlMessage);
         };
     };
     public async getDocentes() {
         try {
-            await BaseDatabase.connection("DOCENTE")
+            const result = await BaseDatabase.connection("DOCENTE")
                 .select("*");
-        } catch (error: any) {
+            return result;
+        } 
+        catch (error: any) {
             throw new Error(error.sqlMessage);
         };
     };
@@ -29,7 +43,8 @@ class DocentesDataBase extends BaseDatabase {
             await BaseDatabase.connection("DOCENTE")
                 .update("turma_id", turma)
                 .where("id", id);
-        } catch (error: any) {
+        } 
+        catch (error: any) {
             throw new Error(error.sqlMessage);
         };
     };
