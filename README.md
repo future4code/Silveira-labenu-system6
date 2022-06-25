@@ -1,6 +1,6 @@
-## LabenuSystem:
+# LabenuSystem:
 
-Você estuda na Labenu_ há tanto tempo que já parecem anos, não é? Então, hoje, vamos pedir para criar um sistema que represente o básico da nossa organização. 
+Criar um sistema que represente o básico de uma organização de ensino.
 
 Ele deve possuir, ao menos, as 3 entidades importantes:
 
@@ -10,7 +10,7 @@ Ele deve possuir, ao menos, as 3 entidades importantes:
 
 2. Docente
 
-    Representa docentes da nossa instituição. Eles devem possuir: id, nome, email, data de nascimento e todas as especialidades dele. Há 7 especialidades: React, Redux, CSS, Testes, Typescript, Programação Orientada a Objetos e Backend
+    Representa docentes da nossa instituição. Eles devem possuir: id, nome, email, data de nascimento e todas as especialidades dele. Há 7 especialidades: React, Redux, CSS, Testes, Typescript, Programação Orientada a Objetos e Backend.
 
 3. Turma
 
@@ -31,3 +31,21 @@ As funcionalidades básicas são:
 → Adicionar docente na turma;
 
 → Pegar a idade de algum estudante a partir do id
+
+## Tecnologias
+- TypeScript <img align="center" alt="Andresa- TypeScript" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">
+- MySQL <img align="center" alt="Andresa- TypeScript" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-plain.svg">
+- Node.js <img align="center" alt="Andresa- TypeScript" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain.svg">
+- Heroku <img align="center" alt="Andresa- TypeScript" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/heroku/heroku-plain.svg">
+- JSON
+- Express
+- Knex
+
+## Integrantes
+<div>
+  <a href="https://github.com/Andresa-Alves-Ribeiro" target="blank">Andresa Alves Ribeiro</a>
+    </br>
+  <a href="https://github.com/Lets-DavIt" target="blank">Davi Silva de Souza</a>
+    </br>
+  <a href="https://github.com/GabrielSS187" target="_blank">Gabriel Menezes Souza</a>
+</div>
