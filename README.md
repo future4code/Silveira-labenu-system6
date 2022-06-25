@@ -50,5 +50,5 @@ https://documenter.getpostman.com/view/20353720/UzBqqRQW
     </br>
   <a href="https://github.com/Lets-DavIt" target="blank">Davi Silva de Souza</a>
     </br>
-  <a href="https://github.com/GabrielSS187" target="_blank">Gabriel Menezes Souza</a>
+  <a href="https://github.com/MenezesSouza" target="_blank">Gabriel Menezes Souza</a>
 </div>
