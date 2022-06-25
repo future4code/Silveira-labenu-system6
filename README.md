@@ -36,13 +36,13 @@ As funcionalidades básicas são:
 https://documenter.getpostman.com/view/20353720/UzBqqRQW
 
 ## Tecnologias
-- TypeScript <img align="center" alt="Andresa- TypeScript" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">
-- MySQL <img align="center" alt="Andresa- TypeScript" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-plain.svg">
-- Node.js <img align="center" alt="Andresa- TypeScript" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain.svg">
-- Heroku <img align="center" alt="Andresa- TypeScript" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/heroku/heroku-plain.svg">
-- JSON
-- Express
-- Knex
+- TypeScript <img align="center" alt="TypeScript" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">
+- MySQL <img align="center" alt="MySQL" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-plain.svg">
+- Node.js <img align="center" alt="Node.js" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain.svg">
+- Heroku <img align="center" alt="Heroku" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/heroku/heroku-plain.svg">
+- JSON <img align="center" alt="JSON" height="30" width="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/json/json.png">
+- Express <img align="center" alt="Express" height="30" width="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/express/express.png">
+- Knex <img align="center" alt="Knex" height="30" width="30" src="https://avatars.githubusercontent.com/u/10490573?s=200&v=4">
 
 ## Integrantes
 <div>
