@@ -32,6 +32,9 @@ As funcionalidades básicas são:
 
 → Pegar a idade de algum estudante a partir do id
 
+## Documentação Postman
+https://documenter.getpostman.com/view/20353720/UzBqqRQW
+
 ## Tecnologias
 - TypeScript <img align="center" alt="Andresa- TypeScript" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">
 - MySQL <img align="center" alt="Andresa- TypeScript" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-plain.svg">
